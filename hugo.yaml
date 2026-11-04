@@ -1,0 +1,35 @@
+baseURL: "https://chae-mg.github.io/"
+locale: "ko-kr"
+title: "채민기의 기록"
+theme: "PaperMod"
+enableRobotsTXT: true
+pagination:
+  pagerSize: 10
+params:
+  env: production
+  title: "채민기의 기록"
+  description: "일하면서 내린 판단과 그 이유를 남깁니다."
+  author: "채민기"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowToc: true
+  homeInfoParams:
+    Title: "채민기의 기록"
+    Content: "일하면서 내린 판단과 그 이유를 남깁니다."
+menus:
+  main:
+    - name: 글
+      pageRef: /posts
+      weight: 10
+    - name: 태그
+      pageRef: /tags
+      weight: 20
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
